@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.Istok"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Добавить источник" MaxHeight="300" MaxWidth="300" MinHeight="300" MinWidth="300">
+    <Grid Background="#FFFBFE00">
+
+        <Label Content="Название источника" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,10,0,0"></Label>
+        <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,41,0,0" BorderBrush="{x:Null}" Background="#B2BC2F"></TextBox>
+
+        <Label Content="Адрес" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,116,0,0"></Label>
+        <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,147,0,0" BorderBrush="{x:Null}" Background="#B2BC2F" ></TextBox>
+
+        <Button Content="Добавить" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47" BorderBrush="{x:Null}" Background="#B2BC2F" ></Button>
+        <Button Content="Отменить"  Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#B2BC2F" ></Button>
+
+    </Grid>
+</Window>
