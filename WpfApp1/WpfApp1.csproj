@@ -55,7 +55,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DelVi.xaml.cs">
+      <DependentUpon>DelVi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Red.xaml.cs">
+      <DependentUpon>Red.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedVi.xaml.cs">
+      <DependentUpon>RedVi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vibr.xaml.cs">
+      <DependentUpon>Vibr.xaml</DependentUpon>
+    </Compile>
     <Page Include="Del.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DelVi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -88,6 +104,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Red.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedVi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vibr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -115,7 +143,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\Phonesa.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\vibr.png" />
   </ItemGroup>

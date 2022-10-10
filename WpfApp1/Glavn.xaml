@@ -7,45 +7,58 @@
         mc:Ignorable="d"
           Title="Приложение для пользователей" Height="600" Width="1000">
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFA0618F" Offset="0.22"/>
-                <GradientStop Color="#FFFCFF00" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
 
-        <Border Background="#200772" MinHeight="100" MinWidth="200" Margin="32,82,303,332" CornerRadius="5">
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="{x:Null}" Background="#FFF0F0F0" Foreground="Black"/>
+        <Image Source="Resources\Phonesa.jpg" Margin="1208,-182,-1502,-95"  >
+            <Image.RenderTransform>
+                <ScaleTransform ScaleX="-1" ></ScaleTransform>
+            </Image.RenderTransform>
+        </Image>
+
+        <Border  MinHeight="100" MinWidth="200" Margin="32,82,303,332" CornerRadius="5">
+            <DataGrid BorderBrush="{x:Null}" Background="#60E2751A" Name="Is_Grid" ></DataGrid>
         </Border>
-        <Border Background="#200772" MinHeight="100" MinWidth="200" Margin="32,337,303,77" CornerRadius="5">
-            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Border  MinHeight="100" MinWidth="200" Margin="32,337,303,77" CornerRadius="5">
+            <DataGrid BorderBrush="{x:Null}" Background="#60E2751A" Name="Is_ViGrid" ></DataGrid>
         </Border>
 
 
-        <Menu  Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,0,0,0" Background="#FFE4376F">
-            <MenuItem Header="Источник">
-            <MenuItem Header="Добавить..." Click="MenuItem_Click"></MenuItem>
-            <MenuItem Header="Удалить" Click="MenuItem_Click_1"></MenuItem>
-            <MenuItem Header="Редактировать..." Click="MenuItem_Click_2"></MenuItem>
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,0,0,0" Background="#FFF18C10" >
+            <MenuItem Header="Источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" >
+                <MenuItem Header="Добавить..." Foreground="Black" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_2"></MenuItem>
             </MenuItem>
         </Menu>
 
-        <Button Content="Выборы" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="68,0,0,0" Background="{x:Null}" BorderBrush="{x:Null}"></Button>
-        <Button Content="Расчет" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="128,0,0,0" BorderBrush="{x:Null}" Background="{x:Null}"></Button>
-        <Label Content="Источник выборов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,51,0,0"></Label >
-        <Label Content="Выборы" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,306,0,0"/>
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="68,0,0,0" Background="#FFF18C10">
+            <MenuItem Header="Выбросы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14">
+                <MenuItem Header="Добавить..."  Foreground="Black" Click="MenuItem_Click_3"></MenuItem>
+                <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_4"></MenuItem>
+                <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_5"></MenuItem>
+            </MenuItem>
+        </Menu>
 
-        <Button Content="Добавить источник..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,82,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
-        <Button Content="Удалить источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,122,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
-        <Button Content="Редактировать источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,162,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
+        <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,0,0,0" Background="#FFF18C10">
+            <MenuItem Header="Расчет" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></MenuItem>
+            <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
+            <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
+            <MenuItem Header="Средние выбросы"  Foreground="Black" Click="MenuItem_Click_8"></MenuItem>
+        </Menu>
 
-        <Button Content="Добавить источник..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,337,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
-        <Button Content="Удалить источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,377,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
-        <Button Content="Редактировать источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,417,0,0" Height="35" Width="237" Background="#B2BC2F"></Button>
+        <Label Content="Источник выбросов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,50,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" Height="27" Width="131" FontSize="18"></Label >
+        <Label Content="Выбросы" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,306,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" Height="27" Width="131" FontSize="18"/>
 
-        <Button Content="Минимальные выборы" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="33,512,0,0" Background="#B2BC2F"></Button>
-        <Button Content="Максимальные выборы" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="246,512,0,0" Background="#B2BC2F"></Button>
-        <Button Content="Средние выборы" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="458,512,0,0" Background="#B2BC2F"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,82,0,0" Height="35" Width="237" Background="#FFF18C10" FontSize="14"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,122,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,162,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,337,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,377,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,417,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Минимальные выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="33,512,0,0" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Максимальные выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="246,512,0,0" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Средние выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="458,512,0,0" Background="#FFF18C10"></Button>
 
     </Grid>
 </Window>

@@ -6,16 +6,18 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Добавить источник" MaxHeight="300" MaxWidth="300" MinHeight="300" MinWidth="300">
-    <Grid Background="#FFFBFE00">
+    <Grid>
 
-        <Label Content="Название источника" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,10,0,0"></Label>
-        <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,41,0,0" BorderBrush="{x:Null}" Background="#B2BC2F"></TextBox>
+        <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
 
-        <Label Content="Адрес" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,116,0,0"></Label>
-        <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,147,0,0" BorderBrush="{x:Null}" Background="#B2BC2F" ></TextBox>
+        <Label Content="Название источника" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,49,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
+        <TextBox x:Name="Nazv_Is"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,80,0,0" Background="{x:Null}" BorderBrush="#FFF18C10"></TextBox>
 
-        <Button Content="Добавить" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47" BorderBrush="{x:Null}" Background="#B2BC2F" ></Button>
-        <Button Content="Отменить"  Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#B2BC2F" ></Button>
+        <Label Content="Адрес" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,116,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
+        <TextBox x:Name="Adres" Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,147,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" ></TextBox>
+
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Добавить" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Отменить" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"  Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
 
     </Grid>
 </Window>

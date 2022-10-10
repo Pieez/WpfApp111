@@ -6,20 +6,22 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Логин и пароль" MaxHeight="300" MaxWidth="300" MinHeight="300" MinWidth="300">
-    <Grid Background="#FFFBFE00" >
+    <Grid >
 
-        <Label Content="Логин и вход" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,15,0,0"></Label>
+        <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
 
-        <Label Content="Логин" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,46,0,0" ></Label>
-        <TextBox x:Name="Log" HorizontalAlignment="Center" VerticalAlignment="Top" Width="218" Margin="0,77,0,0" Background="#B2BC2F" ></TextBox>
+        <Label Content="Логин и вход" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,15,0,0"></Label>
 
-        <Label Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,98,0,0" ></Label>
-        <PasswordBox x:Name="Pass" HorizontalAlignment="Center" VerticalAlignment="Top" Width="218" Background="#B2BC2F" Margin="0,124,0,0"></PasswordBox>
+        <Label Content="Логин" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,46,0,0" ></Label>
+        <TextBox Style="{DynamicResource TextBox1}" x:Name="Log" HorizontalAlignment="Center" VerticalAlignment="Top" Width="218" Margin="0,77,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" ></TextBox>
 
-        <Button Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,164,0,0" Width="72" Background="#B2BC2F" BorderBrush="{x:Null}" ></Button>
-        <Button x:Name="Vhod" Content="Вход" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,197,0,0" Width="72" Click="Vhod_Click" Background="#B2BC2F" BorderBrush="{x:Null}" ></Button>
+        <Label Content="Пароль" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,98,0,0" ></Label>
+        <PasswordBox Style="{DynamicResource PasswordBox}" x:Name="Pass" HorizontalAlignment="Center" VerticalAlignment="Top" Width="218" Background="{x:Null}" Margin="0,124,0,0" BorderBrush="#FFF18C10"  ></PasswordBox>
 
-        <Image Source="Resources/vibr.png" Margin="113,199,113,-14"></Image>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Регистрация" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,164,0,0" Width="72" Background="#FFF18C10" BorderBrush="{x:Null}" />
+        <Button Style="{DynamicResource ButtonStyle3}" x:Name="Vhod" Content="Вход" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,197,0,0" Width="72" Click="Vhod_Click" Background="#FFF18C10" BorderBrush="{x:Null}" ></Button>
+
+        <Image Source="Resources/vibr.png" Margin="10,-13,216,198"></Image>
 
     </Grid>
 </Window>
