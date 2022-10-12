@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-          Title="Приложение для пользователей" Height="600" Width="1000">
+          Title="Приложение для пользователей" MinHeight="600" MaxHeight="600" MinWidth="1000" MaxWidth="1000">
     <Grid>
 
         <Image Source="Resources\Phonesa.jpg" Margin="1208,-182,-1502,-95"  >
@@ -39,10 +39,11 @@
         </Menu>
 
         <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,0,0,0" Background="#FFF18C10">
-            <MenuItem Header="Расчет" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></MenuItem>
-            <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
-            <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
-            <MenuItem Header="Средние выбросы"  Foreground="Black" Click="MenuItem_Click_8"></MenuItem>
+            <MenuItem Header="Расчет" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14">
+                <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
+                <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
+                <MenuItem Header="Средние выбросы"  Foreground="Black" Click="MenuItem_Click_8"></MenuItem>
+            </MenuItem>
         </Menu>
 
         <Label Content="Источник выбросов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,50,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" Height="27" Width="131" FontSize="18"></Label >

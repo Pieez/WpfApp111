@@ -11,12 +11,12 @@
         <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
 
         <Label Content="Название источника" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,49,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <TextBox x:Name="Nazv_Is"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,80,0,0" Background="{x:Null}" BorderBrush="#FFF18C10"></TextBox>
+        <TextBox x:Name="Nazv_Is"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,80,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" TextChanged="Nazv_Is_TextChanged"></TextBox>
 
         <Label Content="Адрес" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,116,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
         <TextBox x:Name="Adres" Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,147,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" ></TextBox>
 
-        <Button Style="{DynamicResource ButtonStyle2}" Content="Добавить" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Добавить" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47" BorderBrush="{x:Null}" Background="#FFF18C10" Click="Button_Click" ></Button>
         <Button Style="{DynamicResource ButtonStyle2}" Content="Отменить" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"  Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
 
     </Grid>
