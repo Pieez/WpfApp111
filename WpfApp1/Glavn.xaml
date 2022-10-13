@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
           Title="Приложение для пользователей" MinHeight="600" MaxHeight="600" MinWidth="1000" MaxWidth="1000">
-    <Grid>
+    <Grid Background="#4E2982">
 
         <Image Source="Resources\Phonesa.jpg" Margin="1208,-182,-1502,-95"  >
             <Image.RenderTransform>

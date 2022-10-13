@@ -10,8 +10,10 @@
 
         <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
 
+        <TextBox x:Name="Idd" Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,86,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" ></TextBox>
+
         <Label Content="Вы действительно хотите удалить источник"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,39,0,0"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <Button  Style="{DynamicResource ButtonStyle2}" Content="Да"  Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47"  BorderBrush="{x:Null}" Background="#FFF18C10"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Button>
+        <Button  Style="{DynamicResource ButtonStyle2}" Content="Да"  Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47"  BorderBrush="{x:Null}" Background="#FFF18C10"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Click="Dell"></Button>
         <Button  Style="{DynamicResource ButtonStyle2}" Content="Нет" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#FFF18C10"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Button>
 
     </Grid>

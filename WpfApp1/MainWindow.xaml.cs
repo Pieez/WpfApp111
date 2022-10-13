@@ -43,6 +43,7 @@ namespace WpfApp1
         public Glavn g = new Glavn();
         public MainWindow()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
           
         }

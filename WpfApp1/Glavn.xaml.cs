@@ -31,6 +31,7 @@ namespace WpfApp1
 
         public Glavn()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
@@ -82,24 +83,25 @@ namespace WpfApp1
 
         private void Dob_Is(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
-            //    String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
-            //    SqlConnection con = new SqlConnection(connectionString);
-            //    SqlCommand cmd = new SqlCommand("select* from Source", con);
-            //    con.Open();
-            //    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            //    DataTable dt = new DataTable();
-            //    adapter.Fill(dt);
-            //    Is_Grid.ItemsSource = dt.DefaultView;
-            //    cmd.Dispose();
-            //    con.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //}
+            try
+            {
+                String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
+                SqlConnection con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand("select* from Source", con);
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                Is_Grid.ItemsSource = dt.DefaultView;
+                cmd.Dispose();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+            }
 
             i.Show();
+           
         }
 
         private void Dob_Is_Vi(object sender, RoutedEventArgs e)
