@@ -28,7 +28,7 @@ namespace WpfApp1
         public RedVi redvi = new RedVi();
         public DelVi delvi = new DelVi();
 
-
+        
         public Glavn()
         {
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
@@ -83,6 +83,19 @@ namespace WpfApp1
 
         private void Dob_Is(object sender, RoutedEventArgs e)
         {
+
+            i.Show();
+            Close();
+           
+        }
+
+        private void Dob_Is_Vi(object sender, RoutedEventArgs e)
+        {
+         
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
             try
             {
                 String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
@@ -93,28 +106,6 @@ namespace WpfApp1
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 Is_Grid.ItemsSource = dt.DefaultView;
-                cmd.Dispose();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-            }
-
-            i.Show();
-           
-        }
-
-        private void Dob_Is_Vi(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
-                SqlConnection con = new SqlConnection(connectionString);
-                SqlCommand cmd = new SqlCommand("select* from Emission", con);
-                con.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
                 Is_ViGrid.ItemsSource = dt.DefaultView;
                 cmd.Dispose();
                 con.Close();
@@ -122,6 +113,21 @@ namespace WpfApp1
             catch (Exception ex)
             {
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_9(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_10(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

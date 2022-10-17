@@ -5,61 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-          Title="Приложение для пользователей" MinHeight="600" MaxHeight="600" MinWidth="1000" MaxWidth="1000">
-    <Grid Background="#4E2982">
+        Title="Приложение для пользователей" MinHeight="720" MaxHeight="720" MinWidth="1280" MaxWidth="1280"
+        Loaded="Window_Loaded">
 
-        <Image Source="Resources\Phonesa.jpg" Margin="1208,-182,-1502,-95"  >
+    <Grid Background="#FFD4D4D4">
+
+        <Image Source="Resources\Walpper.jpg" Margin="1368,-107,-1493,-174"  >
             <Image.RenderTransform>
                 <ScaleTransform ScaleX="-1" ></ScaleTransform>
             </Image.RenderTransform>
         </Image>
 
         <Border  MinHeight="100" MinWidth="200" Margin="32,82,303,332" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#60E2751A" Name="Is_Grid" ></DataGrid>
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_Grid" Margin="0,0,104,98" ></DataGrid>
         </Border>
         <Border  MinHeight="100" MinWidth="200" Margin="32,337,303,77" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#60E2751A" Name="Is_ViGrid" ></DataGrid>
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_ViGrid" Margin="0,10,0,-10" ></DataGrid>
         </Border>
 
 
-        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,0,0,0" Background="#FFF18C10" >
-            <MenuItem Header="Источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" >
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" Background="#FFD4D4D4" >
+            <MenuItem Header="    Источник" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Width="76" Height="24" Click="MenuItem_Click_9" >
                 <MenuItem Header="Добавить..." Foreground="Black" Click="MenuItem_Click"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_1"></MenuItem>
                 <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_2"></MenuItem>
             </MenuItem>
         </Menu>
 
-        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="68,0,0,0" Background="#FFF18C10">
-            <MenuItem Header="Выбросы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14">
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,0,0,0" Background="#FFD4D4D4">
+            <MenuItem Header="    Выбросы" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Height="19" Width="77">
                 <MenuItem Header="Добавить..."  Foreground="Black" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_4"></MenuItem>
                 <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_5"></MenuItem>
             </MenuItem>
         </Menu>
 
-        <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="133,0,0,0" Background="#FFF18C10">
-            <MenuItem Header="Расчет" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14">
+        <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,0,0,0" Background="#FFD4D4D4">
+            <MenuItem Header="      Расчет" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Click="MenuItem_Click_10">
                 <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
                 <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
                 <MenuItem Header="Средние выбросы"  Foreground="Black" Click="MenuItem_Click_8"></MenuItem>
             </MenuItem>
         </Menu>
 
-        <Label Content="Источник выбросов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,50,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" Height="27" Width="131" FontSize="18"></Label >
-        <Label Content="Выбросы" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,306,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" Height="27" Width="131" FontSize="18"/>
+        <Label Content="Источник выбросов" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Montblanc" Height="45" Width="186" FontSize="36" Margin="33,37,0,0"></Label >
+        <Label Content="Выбросы" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Montblanc" Height="55" Width="131" FontSize="48" Margin="33,277,0,0"/>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,82,0,0" Height="35" Width="237" Background="#FFF18C10" FontSize="14"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,122,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,162,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="Black" FontFamily="Oswald light" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,76,0,0" Height="35" Width="237" Background="#FFD4D4D4" FontSize="24"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,116,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,156,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,337,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,377,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="717,417,0,0" Height="35" Width="237" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,336,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,376,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,416,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Минимальные выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="33,512,0,0" Background="#FFF18C10"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Максимальные выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="246,512,0,0" Background="#FFF18C10"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Средние выборы" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="207" Margin="458,512,0,0" Background="#FFF18C10"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Минимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="33,649,0,0" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Максимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="303,649,0,0" Background="#FFD4D4D4" Click="Button_Click"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Средние выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="573,649,0,0" Background="#FFD4D4D4"></Button>
 
     </Grid>
 </Window>

@@ -144,10 +144,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Phonesa.jpg" />
+    <Resource Include="Resources\vibr.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\vibr.png" />
+    <Resource Include="Resources\Walpper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

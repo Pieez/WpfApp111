@@ -39,35 +39,25 @@ namespace WpfApp1
 
         public Istok()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
             DataTable dataTable = Select("insert into Source ([ID_Source],[Name],[Adress]) values ('"+Id.Text+"','"+Nazvis.Text+"','"+Adres.Text+"')");
             Glavn g = new Glavn();
-            //try
-            //{
-            //    String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
-            //    SqlConnection con = new SqlConnection(connectionString);
-            //    SqlCommand cmd = new SqlCommand("select* from Source", con);
-            //    con.Open();
-            //    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            //    DataTable dt = new DataTable();
-            //    adapter.Fill(dt);
-            //    g.Is_Grid.ItemsSource = dt.DefaultView;
-            //    cmd.Dispose();
-            //    con.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //}
-            //g.Show();
-            //Close();
-
+        
+            g.Show();
+            Close();
         }
 
-        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Glavn g = new Glavn();
+            g.Show();
+            Close();
+        }
     }
 }
