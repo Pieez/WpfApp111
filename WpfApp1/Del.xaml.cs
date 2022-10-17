@@ -37,16 +37,25 @@ namespace WpfApp1
 
         public Del()
         {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
 
         
         private void Dell(object sender, RoutedEventArgs e)
         {
-
+            Glavn g = new Glavn();
             DataTable dataTable = Select("delete from Source where ID_Source = "+Idd.Text+" ");
+            g.Show();
             Close();
 
+        }
+
+        private void Dont_Dell(object sender, RoutedEventArgs e)
+        {
+            Glavn g = new Glavn();
+            g.Show();
+            Close();
         }
     }
 }

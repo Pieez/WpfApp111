@@ -16,15 +16,15 @@
             </Image.RenderTransform>
         </Image>
 
-        <Border  MinHeight="100" MinWidth="200" Margin="32,82,303,332" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_Grid" Margin="0,0,104,98" ></DataGrid>
+        <Border  MinHeight="100" MinWidth="200" Margin="32,82,402,432" CornerRadius="5">
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_Grid"  ></DataGrid>
         </Border>
-        <Border  MinHeight="100" MinWidth="200" Margin="32,337,303,77" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_ViGrid" Margin="0,10,0,-10" ></DataGrid>
+        <Border  MinHeight="100" MinWidth="200" Margin="32,352,402,157" CornerRadius="5">
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_ViGrid" />
         </Border>
 
 
-        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" Background="#FFD4D4D4" >
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,10,0,0" Background="#FFD4D4D4" >
             <MenuItem Header="    Источник" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Width="76" Height="24" Click="MenuItem_Click_9" >
                 <MenuItem Header="Добавить..." Foreground="Black" Click="MenuItem_Click"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_1"></MenuItem>
@@ -32,7 +32,7 @@
             </MenuItem>
         </Menu>
 
-        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="92,0,0,0" Background="#FFD4D4D4">
+        <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,10,0,0" Background="#FFD4D4D4">
             <MenuItem Header="    Выбросы" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Height="19" Width="77">
                 <MenuItem Header="Добавить..."  Foreground="Black" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_4"></MenuItem>
@@ -40,7 +40,7 @@
             </MenuItem>
         </Menu>
 
-        <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,0,0,0" Background="#FFD4D4D4">
+        <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,10,0,0" Background="#FFD4D4D4">
             <MenuItem Header="      Расчет" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Click="MenuItem_Click_10">
                 <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
                 <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
@@ -51,17 +51,17 @@
         <Label Content="Источник выбросов" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Montblanc" Height="45" Width="186" FontSize="36" Margin="33,37,0,0"></Label >
         <Label Content="Выбросы" HorizontalAlignment="Left" VerticalAlignment="Top"  Foreground="White" FontFamily="Montblanc" Height="55" Width="131" FontSize="48" Margin="33,277,0,0"/>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="Black" FontFamily="Oswald light" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,76,0,0" Height="35" Width="237" Background="#FFD4D4D4" FontSize="24"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,116,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,156,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="Black" FontFamily="Oswald light" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,80,0,0" Height="35" Width="238" Background="#FFD4D4D4" FontSize="24"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,120,0,0" Height="35" Width="238" Background="#FFD4D4D4" Click="Delete"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,160,0,0" Height="35" Width="238" Background="#FFD4D4D4"></Button>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,336,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,376,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1033,416,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,352,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,392,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,432,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
 
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Минимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="33,649,0,0" Background="#FFD4D4D4"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Максимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="303,649,0,0" Background="#FFD4D4D4" Click="Button_Click"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Средние выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265" Margin="573,649,0,0" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Минимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="265" Margin="33,576,0,0" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Максимальные выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="265" Margin="303,576,0,0" Background="#FFD4D4D4" Click="Button_Click"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Средние выборы" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="265" Margin="573,576,0,0" Background="#FFD4D4D4"></Button>
 
     </Grid>
 </Window>

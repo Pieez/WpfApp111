@@ -106,6 +106,22 @@ namespace WpfApp1
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
                 Is_Grid.ItemsSource = dt.DefaultView;
+                cmd.Dispose();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+            }
+
+            try
+            {
+                String connectionString = "server=ngknn.ru;Trusted_Connection=No;DataBase=Registr;User=33П;PWD=12357";
+                SqlConnection con = new SqlConnection(connectionString);
+                SqlCommand cmd = new SqlCommand("select* from Emission", con);
+                con.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
                 Is_ViGrid.ItemsSource = dt.DefaultView;
                 cmd.Dispose();
                 con.Close();
@@ -128,6 +144,12 @@ namespace WpfApp1
         private void MenuItem_Click_10(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+            del.Show();
+            Close();
         }
     }
 }

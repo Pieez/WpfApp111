@@ -4,17 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        
         mc:Ignorable="d"
-        Title="Добавить источник" MaxHeight="300" MaxWidth="300" MinHeight="300" MinWidth="300">
-    <Grid>
+        Title="Удалить источник" MaxHeight="600" MaxWidth="800" MinHeight="600" MinWidth="800">
+    <Grid Background="Black">
 
-        <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
+        <Image Source="Resources\Rad.gif" Margin="323,128,319,344"></Image>
 
-        <TextBox x:Name="Idd" Style="{DynamicResource TextBox1}" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Margin="0,86,0,0" Background="{x:Null}" BorderBrush="#FFF18C10" ></TextBox>
+        <TextBox x:Name="Idd" Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="396" Height="20" Margin="204,328,0,0" Background="{x:Null}" BorderBrush="White" Foreground="White" ></TextBox>
 
-        <Label Content="Вы действительно хотите удалить источник"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,39,0,0"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <Button  Style="{DynamicResource ButtonStyle2}" Content="Да"  Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,47"  BorderBrush="{x:Null}" Background="#FFF18C10"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Click="Dell"></Button>
-        <Button  Style="{DynamicResource ButtonStyle2}" Content="Нет" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,47" BorderBrush="{x:Null}" Background="#FFF18C10"  Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Button>
+        <Label Content="Вы действительно хотите удалить источник"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="204,245,0,0"  Foreground="White" FontFamily="Montblanc" FontSize="48"></Label>
+        <Button  Style="{DynamicResource ButtonStyle2}" Content="Да"  Width="100"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="290,0,0,150"  BorderBrush="{x:Null}" Background="#FFD4D4D4"  Foreground="#FF020202" FontFamily="Montblanc" FontSize="48" Click="Dell"></Button>
+        <Button  Style="{DynamicResource ButtonStyle2}" Content="Нет" Width="100"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,290,150" BorderBrush="{x:Null}" Background="#FFD4D4D4"  Foreground="#FF020202" FontFamily="Montblanc" FontSize="48" Click="Dont_Dell" ></Button>
 
     </Grid>
 </Window>
