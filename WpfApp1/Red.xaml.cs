@@ -21,12 +21,6 @@ namespace WpfApp1
     /// </summary>
     public partial class Red : Window
     {
-        public Red()
-        {
-            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            InitializeComponent();
-        }
-
         public DataTable Select(string selectSQL)
         {
             DataTable dataTable = new DataTable("dataBase");
@@ -40,13 +34,18 @@ namespace WpfApp1
             sqlConnection.Close();
             return dataTable;
         }
+        public Red()
+        {
+            WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            InitializeComponent();
+        }
+
+      
 
         private void Izmen(object sender, RoutedEventArgs e)
         {
-
-            DataTable dataTable = Select("update Source SET Name ='" + Istok_text + "', Adress ='" + Adres_text + "' where IDSource = '" + id_text + "'");
-            Glavn g = new Glavn();
-
+            Glavn g = new Glavn();       
+            DataTable dataTable = Select("update Source SET [Name] ='"+Istok_text+"', [Adress]= '"+Adres_text+"' where [ID_Source] = '"+id_text+"'");
             g.Show();
             Close();
 

@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="RedVi" MaxHeight="300" MaxWidth="300" MinHeight="300" MinWidth="300">
-    <Grid>
+        Title="RedVi" MaxHeight="600" MaxWidth="800" MinHeight="600" MinWidth="800">
+    <Grid Background="Black">
 
-        <Image Source="Resources\Phonesa.jpg" Margin="-235,-154,0,-142"></Image>
+        <Image Source="Resources\Rad.gif" Margin="321,55,321,417"></Image>
 
 
-        <Label Content="Источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,10,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <Label Content="Количество выбросов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,45,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <TextBox  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="25,77,0,0" Background="{x:Null}" BorderBrush="#FFF18C10"></TextBox>
+        <Label Content="Источник" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="359,195,0,0" Foreground="White" FontFamily="Montblanc" FontSize="48"></Label>
+        <Label Content="Количество выбросов" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-3,243,0,0" Foreground="White" FontFamily="Montblanc" FontSize="48"></Label>
+        <TextBox x:Name="Kol"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="396" Margin="205,263,0,0" Background="{x:Null}" BorderBrush="White" Foreground="White"></TextBox>
 
-        <Label Content="Комментарий" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,101,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14"></Label>
-        <TextBox  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="211" Background="{x:Null}" BorderBrush="#FFF18C10" Margin="25,0,0,0"></TextBox>
+        <Label Content="Комментарий" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,306,0,0" Foreground="White" FontFamily="Montblanc" FontSize="48"></Label>
+        <TextBox x:Name="Komm"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="396" Margin="205,332,0,0" Background="{x:Null}" BorderBrush="White" Foreground="White"></TextBox>
 
-        <Label Content="Дата" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,156,0,0" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Height="27"></Label>
-        <TextBox  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="132" Background="{x:Null}" BorderBrush="#FFF18C10" Margin="25,0,0,78" ></TextBox>
+        <Label Content="Дата" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,389,0,0" Foreground="White" FontFamily="Montblanc" FontSize="48"></Label>
+        <TextBox x:Name="dat"  Style="{DynamicResource TextBox1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="396" Margin="205,409,0,0" Background="{x:Null}" BorderBrush="White" Foreground="White" ></TextBox>
 
-        <Button  Style="{DynamicResource ButtonStyle2}" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Content="Изменить" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="25,0,0,25" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
-        <Button  Style="{DynamicResource ButtonStyle2}" Foreground="White" FontFamily="Bahnschrift SemiBold Condensed" FontSize="14" Content="Отменить"  Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,25,25" BorderBrush="{x:Null}" Background="#FFF18C10" ></Button>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Изменить" Width="100"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="290,0,0,78" Background="#FFD4D4D4"  Foreground="#FF020202" FontFamily="Montblanc" FontSize="48" Click="Izm_Vi"></Button>
+        <Button Style="{DynamicResource ButtonStyle2}" Content="Отменить"  Width="100"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,290,78"  Background="#FFD4D4D4"  Foreground="#FF020202" FontFamily="Montblanc" FontSize="48" Click="Otm_Vi"></Button>
 
 
     </Grid>

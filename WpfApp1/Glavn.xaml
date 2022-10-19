@@ -25,7 +25,7 @@
 
 
         <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,10,0,0" Background="#FFD4D4D4" >
-            <MenuItem Header="    Источник" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Width="76" Height="24" Click="MenuItem_Click_9" >
+            <MenuItem Header="Источник" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Width="76" Height="24" Click="MenuItem_Click_9" >
                 <MenuItem Header="Добавить..." Foreground="Black" Click="MenuItem_Click"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_1"></MenuItem>
                 <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_2"></MenuItem>
@@ -33,7 +33,7 @@
         </Menu>
 
         <Menu Style="{DynamicResource MenuStyle1}" Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,10,0,0" Background="#FFD4D4D4">
-            <MenuItem Header="    Выбросы" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Height="19" Width="77">
+            <MenuItem Header="Выбросы" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Height="19" Width="77">
                 <MenuItem Header="Добавить..."  Foreground="Black" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Удалить"  Foreground="Black" Click="MenuItem_Click_4"></MenuItem>
                 <MenuItem Header="Редактировать..."  Foreground="Black" Click="MenuItem_Click_5"></MenuItem>
@@ -41,7 +41,7 @@
         </Menu>
 
         <Menu Style="{DynamicResource MenuStyle1}"  Height="20" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="194,10,0,0" Background="#FFD4D4D4">
-            <MenuItem Header="      Расчет" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Click="MenuItem_Click_10">
+            <MenuItem Header="Расчет" Foreground="Black" FontFamily="Oswald Light" FontSize="14" Click="MenuItem_Click_10">
                 <MenuItem Header="Минимальные выбросы"  Foreground="Black" Click="MenuItem_Click_6"></MenuItem>
                 <MenuItem Header="Максимальные выбросы"  Foreground="Black" Click="MenuItem_Click_7"></MenuItem>
                 <MenuItem Header="Средние выбросы"  Foreground="Black" Click="MenuItem_Click_8"></MenuItem>

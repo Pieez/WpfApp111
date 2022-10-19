@@ -23,5 +23,15 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Izm_Vi(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Otm_Vi(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
