@@ -151,5 +151,11 @@ namespace WpfApp1
             del.Show();
             Close();
         }
+
+        private void Red(object sender, RoutedEventArgs e)
+        {
+            red.Show();
+            Close();
+        }
     }
 }

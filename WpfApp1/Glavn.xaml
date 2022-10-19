@@ -17,10 +17,10 @@
         </Image>
 
         <Border  MinHeight="100" MinWidth="200" Margin="32,82,402,432" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_Grid"  ></DataGrid>
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" RowBackground="Transparent" Name="Is_Grid"  ></DataGrid>
         </Border>
         <Border  MinHeight="100" MinWidth="200" Margin="32,352,402,157" CornerRadius="5">
-            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" Name="Is_ViGrid" />
+            <DataGrid BorderBrush="{x:Null}" Background="#608E8E8E" RowBackground="Transparent" Name="Is_ViGrid" />
         </Border>
 
 
@@ -53,7 +53,7 @@
 
         <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is" Foreground="Black" FontFamily="Oswald light" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,80,0,0" Height="35" Width="238" Background="#FFD4D4D4" FontSize="24"></Button>
         <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,120,0,0" Height="35" Width="238" Background="#FFD4D4D4" Click="Delete"></Button>
-        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,160,0,0" Height="35" Width="238" Background="#FFD4D4D4"></Button>
+        <Button Style="{DynamicResource ButtonStyle4}" Content="Редактировать источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,160,0,0" Height="35" Width="238" Background="#FFD4D4D4" Click="Red"></Button>
 
         <Button Style="{DynamicResource ButtonStyle4}" Content="Добавить источник..." Click="Dob_Is_Vi" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,352,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
         <Button Style="{DynamicResource ButtonStyle4}" Content="Удалить источник" Foreground="Black" FontFamily="Oswald light" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="914,392,0,0" Height="35" Width="237" Background="#FFD4D4D4"></Button>
