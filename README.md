@@ -10,7 +10,7 @@
 ```
 \WpfApp111\WpfApp1\Resources\Stalk.TTF
 ```
-![alt text](https://i.ibb.co/TcGpRG6/image.png)
+![alt text](https://i.ibb.co/HPGRDW2/3b804b49ef12be8fd751b14f76aec0f2.webp)
 
 2. Запускаем в Visual Studio с помощью кнопки 
 "Пуск" или F5
